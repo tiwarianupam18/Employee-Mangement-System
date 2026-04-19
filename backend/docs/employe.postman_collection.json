@@ -1,0 +1,210 @@
+{
+  "info": {
+    "_postman_id": "e9dca54e-9dd8-4f6d-a37c-d920fe5a0870",
+    "name": "employe",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "47198165",
+    "_collection_link": "https://go.postman.co/collection/47198165-e9dca54e-9dd8-4f6d-a37c-d920fe5a0870?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "register",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "login",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "craete employee",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTNjZDAyMWQxN2YwOGYyMjFjY2Q2ZiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NjUzNjg0MiwiZXhwIjoxNzc2NjIzMjQyfQ.4bLYFasEkgcHHL3wVAYkHTTM9xMOAucsP7McUPHbXeE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Aman\",\r\n  \"email\": \"aman@gmail.com\",\r\n  \"department\": \"IT\",\r\n  \"branch\": \"Noida\",\r\n  \"designation\": \"Developer\",\r\n  \"manager_id\": \"some_manager_id\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/employees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "employees"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get employee",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "upadte employee",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZTNjZDAyMWQxN2YwOGYyMjFjY2Q2ZiIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NjUzNjg0MiwiZXhwIjoxNzc2NjIzMjQyfQ.4bLYFasEkgcHHL3wVAYkHTTM9xMOAucsP7McUPHbXeE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Aman Updated\",\r\n  \"designation\": \"Senior Developer\",\r\n  \"status\": \"active\",\r\n  \"role\": \"employee\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/employees/69e3d0d3e74ef1660a77a7d0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "employees",
+            "69e3d0d3e74ef1660a77a7d0"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete employee",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "craeye shift",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "get shifts",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "upadte shift",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "checkin",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "checkout",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "self attendence history",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "apply leave",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "reject leave",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "arove leave",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "get leaves",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "delete shift",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
